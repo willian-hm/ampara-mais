@@ -4,193 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ampara+</title>
-    <style>
-      @font-face {
-        font-family: "Poppins";
-        src: url("assets/fonts/poppins.ttf") format("truetype");
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: #f4f8fb;
-        color: #333;
-      }
-
-      /* Navbar */
-      nav {
-        background-color: #0563a6;
-        padding: 15px 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
-
-      nav a {
-        color: #fff;
-        margin-left: 20px;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      nav a:hover {
-        text-decoration: underline;
-      }
-
-      #logo {
-        color: white;
-        font-size: 20px;
-      }
-
-      /* Hero */
-      .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 80px 20px;
-        background-color: #eaf3fa;
-      }
-
-      .hero h1 {
-        font-size: 2.8rem;
-        margin-bottom: 20px;
-        color: #0563a6;
-      }
-
-      .hero p {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-        max-width: 700px;
-      }
-
-      .whatsapp-button {
-        background-color: #25d366;
-        color: white;
-        padding: 14px 28px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        text-decoration: none;
-        transition: background-color 0.3s;
-      }
-
-      .whatsapp-button:hover {
-        background-color: #1ebe5b;
-      }
-
-      /* Sobre */
-      .section {
-        padding: 30px 20px;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-
-      .section h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #0563a6;
-        text-align: center;
-      }
-
-      .section p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        text-align: center;
-      }
-
-      /* Valores */
-      .valores {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 30px;
-        gap: 30px;
-      }
-
-      .valor {
-        background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 12px;
-        padding: 25px;
-        width: 250px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      }
-
-      .valor h3 {
-        margin-top: 10px;
-        color: #0563a6;
-      }
-
-      .valor p {
-        font-size: 0.95rem;
-        margin-top: 8px;
-      }
-
-      #sobre img {
-        width: 100%;
-        border-radius: 30px;
-        margin-top: 7%;
-      }
-
-      /* Rodapé */
-      footer {
-        background-color: #0563a6;
-        color: #fff;
-        text-align: center;
-        padding: 25px 10px;
-        margin-top: 60px;
-      }
-
-      /* Botão flutuante do WhatsApp */
-      .whatsapp-float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
-        background-color: white;
-        border-radius: 50%;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 999;
-        transition: transform 0.3s ease;
-      }
-
-      .whatsapp-float:hover {
-        transform: scale(1.1);
-      }
-
-      .whatsapp-float img {
-        width: 32px;
-        height: 32px;
-      }
-
-      /* Responsivo */
-      @media (max-width: 768px) {
-        .hero h1 {
-          font-size: 2rem;
-        }
-        .valor {
-          width: 100%;
-          max-width: 300px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -199,7 +13,6 @@
       <div>
         <a href="#sobre">Sobre</a>
         <a href="#valores">Valores</a>
-        <a href="https://wa.me/554999747355" target="_blank">Contato</a>
       </div>
     </nav>
 
@@ -212,19 +25,12 @@
         quem sabe cuidar com carinho, atenção e respeito.
       </p>
       <p>
-        Nosso papel é conectar
-        cuidadores a pessoas que estão passando por situações delicadas,
-        oferecendo acolhimento, escuta e apoio. Mais do que um serviço, somos
-        uma rede de cuidado humano, feita para transformar vidas com amor e
-        empatia.
+        Nosso papel é conectar cuidadores a pessoas que estão passando por
+        situações delicadas, oferecendo acolhimento, escuta e apoio. Mais do que
+        um serviço, somos uma rede de cuidado humano, feita para transformar
+        vidas com amor e empatia.
       </p>
-      <a
-        class="whatsapp-button"
-        href="https://wa.me/554999747355"
-        target="_blank"
-      >
-        Fale conosco pelo WhatsApp
-      </a>
+       <img src="assets/img/image.png" alt="conexão">
     </section>
 
     <!-- Sobre -->
@@ -233,10 +39,10 @@
       <p>
         A Ampara+ surgiu com o propósito de facilitar conexões entre quem
         precisa de cuidado e quem tem o dom de cuidar. Atuamos como ponte entre
-        profissionais e famílias, oferecendo apoio acolhedor,
-        respeitoso e transformador.
+        profissionais e famílias, oferecendo apoio acolhedor, respeitoso e
+        transformador.
       </p>
-      <img src="assets/img/cuidador.png" alt="">
+      <img src="assets/img/cuidador.png" alt="cuidado" />
     </section>
 
     <!-- Valores -->
@@ -265,14 +71,6 @@
           </p>
         </div>
         <div class="valor">
-          <h3>Zelo</h3>
-          <p>
-            O zelo está nos detalhes, nos pequenos gestos que fazem a diferença.
-            É um carinho discreto capaz de transformar o comum em algo
-            extraordinário.
-          </p>
-        </div>
-        <div class="valor">
           <h3>Empatia</h3>
           <p>
             A Empatia nos aproxima. Sentir com o outro é o que guia nossas ações
@@ -287,20 +85,6 @@
           </p>
         </div>
         <div class="valor">
-          <h3>Simplicidade</h3>
-          <p>
-            Na Simplicidade mora a essência. A beleza do que é verdadeiro, sem
-            excessos, com tudo que realmente importa.
-          </p>
-        </div>
-        <div class="valor">
-          <h3>Profissionais</h3>
-          <p>
-            Profissionais que atuam com propósito, que se entregam com ética,
-            técnica e coração. É assim que fazemos a diferença todos os dias.
-          </p>
-        </div>
-        <div class="valor">
           <h3>Conexão</h3>
           <p>
             A Conexão que criamos é real. Somos ponte entre necessidades e
@@ -312,22 +96,7 @@
 
     <!-- Rodapé -->
     <footer>
-      &copy; 2025 Ampara+ — Todos os direitos reservados. | 📞 WhatsApp:
-      <a
-        href="https://wa.me/554999747355"
-        style="color: #fff; text-decoration: underline"
-        >Clique aqui para falar</a
-      >
+      &copy; 2025 Ampara+ — Todos os direitos reservados.
     </footer>
-
-    <!-- Botão flutuante do WhatsApp -->
-    <a
-      href="https://wa.me/554999747355"
-      class="whatsapp-float"
-      target="_blank"
-      title="Fale conosco no WhatsApp"
-    >
-      <img src="assets/img/ws.png" alt="WhatsApp" />
-    </a>
   </body>
 </html>

@@ -1,0 +1,220 @@
+@font-face {
+        font-family: "Poppins";
+        src: url("assets/fonts/poppins.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f8fb;
+        color: #333;
+      }
+
+      /* Navbar */
+      nav {
+        background-color: #0563a6;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: #fff;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      #logo {
+        color: white;
+        font-size: 20px;
+      }
+
+      /* Hero */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 80px 20px;
+        background-color: #eaf3fa;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        color: #0563a6;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        max-width: 700px;
+      }
+
+      .hero img {
+         width: 45%;
+         height: 45%;
+        border-radius: 30px;
+        margin-top: 7%;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .hero img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Seções */
+      .section {
+        padding: 30px 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .section img {
+        width: 100%;
+        border-radius: 30px;
+        margin-top: 7%;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .section img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      }
+
+      .section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #0563a6;
+        text-align: center;
+      }
+
+      .section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      /* Valores */
+      .valores {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+      }
+
+      .valor {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 25px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .valor:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      }
+
+      .valor h3 {
+        margin-top: 10px;
+        color: #0563a6;
+      }
+
+      .valor p {
+        font-size: 0.95rem;
+        margin-top: 8px;
+      }
+
+      /* Seção de perfis */
+      .caixas-perfil {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 30px;
+      }
+
+      .caixa-perfil {
+        background: #ffffff;
+        border: 2px solid #ddd;
+        border-radius: 16px;
+        width: 260px;
+        height: 300px;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .caixa-perfil:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      }
+
+      .caixa-perfil img {
+        width: 200px;
+        height: 260px;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      .caixa-perfil h3 {
+        color: #0563a6;
+        font-size: 1.2rem;
+      }
+
+      /* Rodapé */
+      footer {
+        background-color: #0563a6;
+        color: #fff;
+        text-align: center;
+        padding: 25px 10px;
+        margin-top: 60px;
+      }
+
+      /* Responsivo */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .valor {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        .caixa-perfil {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+        }
+      }
