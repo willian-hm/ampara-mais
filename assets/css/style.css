@@ -42,7 +42,7 @@
 
       #logo {
         color: white;
-        font-size: 20px;
+       font-size: 20px;
       }
 
       /* Hero */
@@ -68,13 +68,7 @@
         max-width: 700px;
       }
 
-      .hero img {
-         width: 45%;
-         height: 45%;
-        border-radius: 30px;
-        margin-top: 3%;
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
+    
 
       .hero img:hover {
         transform: translateY(-5px);
