@@ -260,6 +260,22 @@ footer .socials a:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
+   nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
   .hero h1 {
     font-size: 2.2rem;
   }
