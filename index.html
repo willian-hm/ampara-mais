@@ -10,7 +10,14 @@
     <!-- Navbar -->
     <nav>
       <span id="logo">ampara+</span>
-      <div>
+
+      <!-- Botão hamburguer -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <!-- Links -->
+      <div class="nav-links" id="nav-links">
         <a href="#sobre">Sobre</a>
         <a href="#valores">Valores</a>
         <a href="#perfis" class="btn-nav">Quero participar</a>
@@ -123,5 +130,16 @@
     <footer>
       <p>&copy; 2025 Ampara+ — Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Script -->
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        toggle.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

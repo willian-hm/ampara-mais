@@ -52,6 +52,20 @@ nav a:hover {
   color: var(--azul);
 }
 
+/* Botão hamburguer */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--azul);
+}
+
+/* Links da nav */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
 .btn-nav {
   background: var(--azul);
   color: white;
@@ -245,18 +259,7 @@ footer {
   text-align: center;
   padding: 25px 15px;
 }
-footer .socials {
-  margin-top: 10px;
-}
-footer .socials a {
-  margin: 0 8px;
-  font-size: 1.2rem;
-  color: white;
-  transition: 0.3s;
-}
-footer .socials a:hover {
-  color: var(--dourado);
-}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -265,16 +268,30 @@ footer .socials a:hover {
     align-items: center;
     padding: 10px 20px;
   }
-
-  nav div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+  
+  .menu-toggle {
+    display: block;
   }
 
-  nav a {
-    margin-left: 0;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 65px; /* altura da navbar */
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
   .hero h1 {
     font-size: 2.2rem;
