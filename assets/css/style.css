@@ -288,6 +288,10 @@ footer {
   .nav-links.active {
     display: flex;
   }
+
+  .btn-nav {
+      font-size: 15px;
+  }
   .hero h1 {
     font-size: 2.2rem;
   }
